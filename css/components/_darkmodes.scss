@@ -1,0 +1,36 @@
+.dark-mode{
+  transition: .4s;
+  background-color:$color-claro ;
+  .perfil{
+    transition: .4s;
+    background-color: $color-claro;
+    color: $color-primario;
+    &__boton{
+      transition: .4s;
+      background-color: $color-primario;
+    }
+  }
+  h3{
+    color: $color-primario;
+  }
+  .estadistica--perfil{
+    transition: .5s;
+    @include caja(3px,10px)
+  }
+  .ubicacion--perfil{
+    transition: .5s;
+    @include caja(3px,10px)
+  }
+
+  .galeria{
+    transition: .5s;
+    @include caja(3px,10px)
+  }
+
+  .articulos{
+    transition: 1s;
+    background-color: $color-primario;
+    color:$color-claro
+  }
+
+}

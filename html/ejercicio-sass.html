@@ -41,6 +41,12 @@
     </div>
   </section>
   <aside class="articulos">
+    <div class="container-dark-mode">
+      <div class="switch--button">
+        <input class="switch--button--checkbox" id="switch-label" type="checkbox" name="switch-button" onchange="dark_mode()">
+        <label class="switch--button--label" for="switch-label"></label>
+      </div>
+    </div>
     <div class="articulo"><span class="articulo__categoria">Playstation</span>
       <h2 class="articulo__titulo">GTA VI: Filtraciones que son bastante dudosas</h2>
       <p class="articulo__descripcion">Recientemente se filtró en Internet una importante cantidad de supuesta información sobre Grand Theft Auto VI (GTA VI) que nos ofrece una muy buena idea de lo que podemos esperar.</p>
@@ -54,4 +60,13 @@
       <p class="articulo__descripcion">Rockstar lanzó el día de hoy la actualización más grande de Red Dead Online desde que el componente online de Red Dead Redemption 2 se lanzó en noviembre.</p>
     </div>
   </aside>
+  <script>
+    function dark_mode(){
+    		if(document.querySelector('body').classList.contains('dark-mode')){
+    			document.querySelector('body').classList.remove('dark-mode')
+    		}
+    		else{
+    			document.querySelector('body').classList.add('dark-mode')}					
+    	};
+  </script>
 </main>
